@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddddda;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+}
+
+.heading {
+  height: 10vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #040505;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #2f62bb;
+  transition: 0.5s;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+}
+.container {
+  display: grid;
+  background-color: #31316d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+  width: 50%;
+  height: 75vh;
+  margin: auto;
+  padding: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 110px 110px 90px 120px;
+  gap: 10px;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c d d"
+    "c e e";
+}
+.container div {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  font-family: arial, sans-serif;
+  cursor: pointer;
+  align-items: center;
+}
+.container div:hover {
+  color: #000;
+}
+.box_a {
+  background-color: #af2543;
+  grid-area: a;
+}
+.box_b {
+  background-color: #807918;
+  grid-area: b;
+}
+.box_c {
+  background-color: #1ed63d;
+  grid-area: c;
+}
+.box_d {
+  background-color: #97cadb;
+  grid-area: d;
+}
+.box_e {
+  background-color: #97cadb;
+  grid-area: e;
+}
